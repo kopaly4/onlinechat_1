@@ -1,0 +1,21 @@
+.root{
+ -fx-font-size: 14;
+ -fx-background-color: #87ceeb
+}
+.text-area {
+-fx-background-color: #000000;
+-fx-font-size:16;
+-fx-font-weight: bold;
+
+}
+.text-field {
+-fx-border-color: #000000;
+}
+.button {
+-fx-border-color: #000000;
+
+}
+.button:hover {
+ -fx-font-size: 16;
+ -fx-font-weight: bold;
+}
