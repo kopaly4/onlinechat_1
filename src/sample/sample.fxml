@@ -3,6 +3,23 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+
+
+<?import java.net.URL?>
 <GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="15" vgap="20">
+    <stylesheets>
+        <URL value="@/style/style.css">
+        </URL>
+    </stylesheets>
+    <Button text = "send message" GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="150" prefHeight="50"
+        onAction="#sendmessage"/>
+
+    <TextField fx:id="textField" onAction="#sendmessage" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="300" prefHeight="50" >
+    </TextField>
+    <TextArea fx:id="textArea" GridPane.columnSpan="2"  prefHeight="500" prefWidth="0">
+    </TextArea>
 </GridPane>
